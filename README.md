@@ -15,9 +15,15 @@ Create a new SearXNG  instance in five minutes using Docker
 - [Install docker-compose](https://docs.docker.com/compose/install/) (be sure that docker-compose version is at least 1.9.0)
 - Get searxng-docker
   ```sh
+  
+  #!/bin/bash
+  # Install docker and docker-composeapt-get update
+  apt-get -y install docker.io docker-compose
   cd /usr/local
-  git clone https://github.com/searxng/searxng-docker.git
+  #git clone https://github.com/searxng/searxng-docker.git <- Public
+  git clone https://github.com/theinternet-one/searxng-docker.git <-Custom for bootstraping
   cd searxng-docker
+ 
   ```
 - Edit the [.env](https://github.com/searxng/searxng-docker/blob/master/.env) file to set the hostname and an email
 - Generate the secret key ```sed -i "s|ultrasecretkey|$(openssl rand -hex 32)|g" searxng/settings.yml```
