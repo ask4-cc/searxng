@@ -7,6 +7,8 @@ Create a new a SearXNG instance for ask4.cc using Docker
   ```sh
   
   #!/bin/bash
+  
+  
   # Install docker and docker-composeapt-get update
   apt-get -y install docker.io docker-compose
   cd /usr/local
