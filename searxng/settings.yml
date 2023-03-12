@@ -14,7 +14,6 @@ general:
   contact_url: false
   # record stats
   enable_metrics: true
-
 brand:
   new_issue_url: https://github.com/searxng/searxng/issues/new
   docs_url: https://docs.searxng.org/
