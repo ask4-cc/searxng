@@ -15,8 +15,8 @@ Create a new a SearXNG instance for ask4.cc using Docker
   git clone https://github.com/ask4-cc/searxng-docker.git
   cd searxng-docker
   sed -i "s|ultrasecretkey|$(openssl rand -hex 32)|g" searxng/settings.yml
-  ufw allow https
   docker-compose up
+  ufw allow https
   read -rsp $'Press any key to continue...\n' -n1 key
   Press any key to continue...
   docker-compose up -d
