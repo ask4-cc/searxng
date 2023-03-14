@@ -2,6 +2,9 @@
 
 Create a new a SearXNG instance for ask4.cc using Docker
 
+1. Update upstream sources
+2. Update nameservers
+
 ## Deploy Code template
 
   ```sh
